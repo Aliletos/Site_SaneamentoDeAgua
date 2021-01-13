@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/css/magnific-popup.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <title> Consciencia Azul quiz </title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <div id="header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/logo.png" class="img-fluid">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <h3 id="nameSite" class="title text-center"> CONSCIÊNCIA AZUL </h3>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html">Página Inicial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/quiz.html">Quiz</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- //HEADER -->
+
+  <!-- QUIZ -->
+  <div id="tiras" class="block">
+    <div class="container">
+      <h2 class="title text-center"> Quiz sobre o saneamento </h2>
+      <h4 class="subtitle text-center mb-4"> todas as perguntas estarão relacionadas com as noticias da página inicial
+      </h4>
+
+      <div class="mb-4 text-uppercase">
+        <label for="nome"> Digite o seu nome: </label>
+        <input type="text" id="idNome" class="mb-2" required autofocus>
+        <!--autofocus deixa selecionado-->
+      </div>
+
+      <div class="row grid">
+        <!-- Colunas -->
+        <!--tira-->
+        <div class="col-lg-4 col-6 mb-4 element-item chuva">
+          <!--class para filtrar os elementos-->
+          <a href="/assets/img/perguntas/índice.jpg" class="popup-link">
+            <img src="/assets/img/perguntas/índice.jpg" class="img-fluid mb-2">
+          </a>
+          <p class="mb-0">
+            <span class="badge bg-light text-dark">website</span>
+            <span class="badge bg-light text-dark">email</span>
+          </p>
+
+          <div class="form-row">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="alternativa1" value="0" name="alternativas1"
+                onclick="veririfcarResposta()">
+              <label class="form-check-label" for="alternativa1"> Bueiro </label>
+            </div>
+            <br>
+
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="alternativa2" value="0" name="alternativas1"
+                onclick="verificarRespostas()">
+              <label class="form-check-label" for="alternativa2"> Córrego </label>
+            </div>
+            <br>
+
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="alternativa3" value="1.6" name="alternativas1"
+                onclick="verificarRespostas()">
+              <label class="form-check-label" for="alternativa3"> Rede coletora </label>
+            </div>
+            <br>
+
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="alternativa4" value="0" name="alternativas1"
+                onclick="verificarRespostas()">
+              <label class="form-check-label" for="alternativa4"> Rua </label>
+            </div>
+          </div>
+          <br>
+
+        </div>
+        <!--tira-->
+
+        <div class="col-lg-4 col-6 mb-4 element-item tratamento">
+          <!--class para filtrar os elementos-->
+          <a href="/assets/img/perguntas/índice2.jpg" class="popup-link">
+            <img src="/assets/img/perguntas/índice2.jpg" class="img-fluid mb-2">
+          </a>
+          <p class="mb-0">
+            <span class="badge bg-light text-dark">website</span>
+            <span class="badge bg-light text-dark">email</span>
+          </p>
+
+          <div class="form-row">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="alternativa1.2" value="0" name="alternativas2"
+                onclick="veririfcarResposta()">
+              <label class="form-check-label" for="alternativa1.2"> Deixa a toreneira meio aberta </label>
+            </div>
+            <br>
+
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="alternativa2.2" value="0" name="alternativas2"
+                onclick="verificarRespostas()">
+              <label class="form-check-label" for="alternativa2.2"> Aberta </label>
+            </div>
+            <br>
+
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="alternativa3.2" value="0" name="alternativas2"
+                onclick="verificarRespostas()">
+              <label class="form-check-label" for="alternativa3.2"> Fecha enquanto escova </label>
+            </div>
+            <br>
+
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="alternativa4.2" value="1.6" name="alternativas2"
+                onclick="verificarRespostas()">
+              <label class="form-check-label" for="alternativa4.2"> Fechada, deixando para enxaguar tudo no final
+              </label>
+            </div>
+          </div>
+          <br>
+        </div>
+        <!--tira-->
+
+        <div class="col-lg-4 col-6 mb-4 element-item chuva">
+          <!--class para filtrar os elementos-->
+          <a href="/assets/img/perguntas/índice3.jpg" class="popup-link">
+            <img src="/assets/img/perguntas/índice3.jpg" class="img-fluid mb-2">
+          </a>
+          <p class="mb-0">
+            <span class="badge bg-light text-dark">website</span>
+            <span class="badge bg-light text-dark">email</span>
+          </p>
+
+          <div class="form-row">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="alternativa1.3" value="0" name="alternativas3"
+                onclick="veririfcarResposta()">
+              <label class="form-check-label" for="alternativa1.3"> Deixar a torneira aberta </label>
+            </div>
+            <br>
+
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="alternativa2.3" value="0" name="alternativas3"
+                onclick="verificarRespostas()">
+              <label class="form-check-label" for="alternativa2.3"> Jogar lixo no rio </label>
+            </div>
+            <br>
+
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="alternativa3.3" value="1.6" name="alternativas3"
+                onclick="verificarRespostas()">
+              <label class="form-check-label" for="alternativa3.3"> Reciclar e economizar água </label>
+            </div>
+            <br>
+
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="alternativa4.3" value="0" name="alternativas3"
+                onclick="verificarRespostas()">
+              <label class="form-check-label" for="alternativa4.3"> Demorar no banho </label>
+            </div>
+          </div>
+          <br>
+        </div>
+        <!--tira-->
+
+        <div class="col-lg-4 col-6 mb-4 element-item tratamento">
+          <!--class para filtrar os elementos-->
+          <a href="assets/img/perguntas/índice4.jpg" class="popup-link">
+            <img src="/assets/img/perguntas/índice4.jpg" class="img-fluid mb-2">
+          </a>
+          <p class="mb-0">
+            <span class="badge bg-light text-dark">website</span>
+            <span class="badge bg-light text-dark">email</span>
+          </p>
+
+          <div class="form-row">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="alternativa1.4" value="1.6" name="alternativas4"
+                onclick="veririfcarResposta()">
+              <label class="form-check-label" for="alternativa1.4"> Infecção intestinal, diarreia e febre </label>
+            </div>
+            <br>
+
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="alternativa2.4" value="0" name="alternativas4"
+                onclick="verificarRespostas()">
+              <label class="form-check-label" for="alternativa2.4"> Dor de barriga </label>
+            </div>
+            <br>
+
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="alternativa3.4" value="0" name="alternativas4"
+                onclick="verificarRespostas()">
+              <label class="form-check-label" for="alternativa3.4"> Dor no corpo </label>
+            </div>
+            <br>
+
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="alternativa4.4" value="0" name="alternativas4"
+                onclick="verificarRespostas()">
+              <label class="form-check-label" for="alternativa4.4"> Vômito </label>
+            </div>
+          </div>
+          <br>
+        </div>
+        <!--tira-->
+
+        <div class="col-lg-4 col-6 mb-4 element-item chuva">
+          <!--class para filtrar os elementos-->
+          <a href="/assets/img/perguntas/índice5jpg.jpg" class="popup-link">
+            <img src="/assets/img/perguntas/índice5jpg.jpg" class="img-fluid mb-2">
+          </a>
+          <p class="mb-0">
+            <span class="badge bg-light text-dark">website</span>
+            <span class="badge bg-light text-dark">email</span>
+          </p>
+
+          <div class="form-row">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="alternativa1.5" value="0" name="alternativas5"
+                onclick="veririfcarResposta()">
+              <label class="form-check-label" for="alternativa1.5"> Controle de fezes </label>
+            </div>
+            <br>
+
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="alternativa2.5" value="1.6" name="alternativas5"
+                onclick="verificarRespostas()">
+              <label class="form-check-label" for="alternativa2.5"> Água potavel, limpeza urbana, tratamento de esgoto
+              </label>
+            </div>
+            <br>
+
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="alternativa3.5" value="0" name="alternativas5"
+                onclick="verificarRespostas()">
+              <label class="form-check-label" for="alternativa3.5"> Controle de animais domésticos </label>
+            </div>
+            <br>
+
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="alternativa4.5" value="0" name="alternativas5"
+                onclick="verificarRespostas()">
+              <label class="form-check-label" for="alternativa4.5"> Controle de energia elétrica </label>
+            </div>
+          </div>
+          <br>
+
+        </div>
+        <!--tira-->
+
+        <div class="col-lg-4 col-6 mb-4 element-item tratamento">
+          <!--class para filtrar os elementos-->
+          <a href="assets/img/perguntas/índice6.jpg" class="popup-link">
+            <img src="assets/img/perguntas/índice6.jpg" class="img-fluid mb-2">
+          </a>
+          <p class="mb-0">
+            <span class="badge bg-light text-dark">website</span>
+            <span class="badge bg-light text-dark">email</span>
+          </p>
+
+          <div class="form-row">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="alternativa1.6" value="0" name="alternativas6"
+                onclick="veririfcarResposta()">
+              <label class="form-check-label" for="alternativa1.6"> Utilizar água desnecessária </label>
+            </div>
+            <br>
+
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="alternativa2.6" value="0" name="alternativas6"
+                onclick="verificarRespostas()">
+              <label class="form-check-label" for="alternativa2.6"> Lavar o carro todos os dias </label>
+            </div>
+            <br>
+
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="alternativa3.6" value="0" name="alternativas6"
+                onclick="verificarRespostas()">
+              <label class="form-check-label" for="alternativa3.6"> Não tomar banho </label>
+            </div>
+            <br>
+
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="alternativa4.6" value="1.6" name="alternativas6"
+                onclick="verificarRespostas()">
+              <label class="form-check-label" for="alternativa4.6"> Economizar água, aproveitar água da chuva </label>
+            </div>
+          </div>
+          <br>
+        </div>
+      </div>
+
+
+      <input type="button" class=" text-uppercase btn btn-primary button d-md-inline-block d-block mb-4" id="btnEnviar" value="Enviar teste">
+      <br>
+
+    </div>
+  </div>
+  <!-- //QUIZ -->
+
+  <div id="servicos">
+    <div class="container">
+      <h2 class="title text-center" name="descResultado" id="idDescResultado" >  </h2>
+      <h2 class="title text-center" name="descFeedback" id="idDescFeedback" >  </h2>
+
+    </div>
+  </div>
+
+  <div class="direitos">
+    &copy; Todos os direitos reservados
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+
+  <script src="js/bootstrap.min.js"></script> <!-- chamada biblioteca bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script> <!-- chamada biblioteca jquery -->
+  <script src="/js/jquery.magnific-popup.min.js"></script>
+  <!--chamada do plgin magnific-popup-->
+  <script src="/js/isotope.pkgd.min.js"></script> <!-- chamada biblioteca isotope -->
+  <script src="js/main.js"></script> <!-- chamada do js.main -->
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+a {
+    color: var(--primary);
+}
+
+a:hover {
+    color: var(--secondary)
+}
+
+.title {
+    text-transform: uppercase;
+}
+
+.subtitle {
+    color: var(--medium);
+    font-weight: 400;
+}
+
+.bloco {
+    margin-bottom: 120px;
+    /*margem inferior*/
+}
+
+.button {
+    text-transform: lowercase;
+    font-weight: 500;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    border-color: var(--primary);
+    border-radius: 7px;
+    background-color: var(--secondary);
+}
+
+.button:hover {
+    border-color: var(--secondary);
+    background-color: var(--primary);
+}
+
+#slider {
+    background: url(../assets/fundo-transparente-png5.webp) no-repeat center bottom;
+    background-size: contain;
+    /*ficar sempre do tamanho do elemento*/
+}
+
+#slider h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+#slider h4 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+#servicos a.destaque {
+    display: block;
+    background: var(--light);
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    color: black;
+    text-decoration: none;
+    transition: all ease-out 0.2s;
+}
+
+#servicos a.destaque:hover {
+    background: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
+    transform: scale(1.05);
+}
+
+#servicos p {
+    color: var(--dark);
+}
+
+#servicos .destaque .img-container {
+    /*alinhar todos os intens no centro*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+#servicos .destaque .img-container img {
+    /*garantir que dependendo do tamanho da imagem elas fiquem na mesma proporção da linha de serviços.*/
+    max-height: 160px;
+}
